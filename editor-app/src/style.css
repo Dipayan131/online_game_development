@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-slider {
+    @apply appearance-none w-full h-1 bg-transparent;
+
+    &::-webkit-slider-thumb {
+        @apply appearance-none w-4 h-4 bg-blue-500 rounded-full cursor-pointer;
+    }
+
+    &::-moz-range-thumb {
+        @apply w-4 h-4 bg-blue-300 rounded-full cursor-pointer;
+    }
+
+    &::-webkit-slider-runnable-track {
+        @apply w-full h-1 bg-blue-500 rounded-md;
+    }
+
+    &::-moz-range-track {
+        @apply w-full h-1 bg-blue-600 rounded-md;
+    }
+}
