@@ -1,0 +1,12 @@
+declare module "scenify_sdk/App";
+declare module "scenify_sdk/EditorContext";
+declare module "scenify_sdk/EditorProvider";
+declare module "scenify_sdk/Editor";
+declare module "scenify_sdk/useEditorContext";
+declare module "scenify_sdk/useEditor";
+declare module "scenify_sdk/useSlide";
+declare module "scenify_sdk/useActiveObject";
+declare module "firebase_app/useData";
+declare module "firebase_app/DataProvider";
+declare module "firebase_app/storage";
+declare module "firebase_app/useFirebase";
