@@ -1,0 +1,18 @@
+// {
+//   "extends": "../tsconfig.base.json",
+//   "include": ["src"],
+//   "compilerOptions": {
+//     "baseUrl": ".",
+//     "esModuleInterop": true
+//   },
+
+// }
+
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "jsx": "react-jsx"
+  }
+}

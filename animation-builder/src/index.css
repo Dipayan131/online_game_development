@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&family=Tiny5&display=swap');
+
+body{
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #242424;
+  color: whitesmoke;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Elements Styling */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  margin: 10px;
+}
+
+.page-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-bar {
+  margin: 6px;
+}
+
+.category-button {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.55rem 2rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+  margin: 0.25rem;
+}
+
+.run-button{
+  font-family: "Space Grotesk", sans-serif;
+  background-color:orange;
+  font-weight: bold;
+  border: none;
+  padding:10px 30px;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.category-button.selected {
+  background-color: rgb(185, 179, 179);
+  color: black;
+  border-radius: 0.25rem;
+}
+
+.element-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 2rem;
+}
+
+.element-button {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  padding: 0.45rem 2rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+}
+
+.element-button.selected {
+  background-color: rgb(185, 179, 179);
+  color: black;
+  border: none;
+}
+
+.main-content {
+  display: flex;
+  padding: 10px;
+  gap: 15px;
+  text-transform: uppercase;
+}
+.main-content-preview {
+  display: flex;
+  padding: 10px;
+  gap: 15px;
+  text-transform: uppercase;
+}
+
+.params {
+  background-color: rgba(0, 0, 255, 0.575);
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  flex: 4;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.right-section {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.animation-section {
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 200px;
+  height: 100px;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+.middle-section{
+  flex:5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #545455;
+  padding: 15px;
+  border-radius: 10px;
+}
+.textareas {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.textarea {
+  flex:4;
+  display: flex;
+  border-radius: 3px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.code-heading {
+  position: relative;
+}
+
+.textareas p {
+  position: absolute;
+  margin-top: -10px;
+  font-size: 20px;
+}
+
+.textareas .pi-times {
+  margin-top: -10px;
+  right: 0;
+  color: whitesmoke;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+}
+
+/* left-part styling */
+.heading {
+  font-size: 20px;
+  text-align: center;
+}
+
+.iteration-count div input {
+  padding: 3px;
+  outline: none;
+  border:none;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+  font-size: medium;
+}
+
+.duration div input {
+  padding: 5px;
+  outline: none;
+  font-family: "Space Grotesk", sans-serif;
+  border:none;
+  text-align: center;
+  font-size: medium;
+}
+
+.delay div input {
+  padding: 5px;
+  outline: none;
+  font-family: "Space Grotesk", sans-serif;
+  border: none;
+  text-align: center;
+  font-size: medium;
+}
+
+.timing {
+  display: flex;
+  align-items: center;
+}
+
+/* .timing p {
+  margin-right: 10px;
+} */
+
+.timing select {
+  padding: 5px;
+  font-family: "Space Grotesk", sans-serif;
+  border: none;
+  font-size: medium;
+  border-radius: 20px;
+  text-align: center;
+}
+.direction {
+  display: flex;
+  align-items: center;
+}
+
+/* .direction p {
+  margin-right: 10px;
+} */
+
+.direction select {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 5px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  font-size: medium;
+}
+.fill-mode {
+  display: flex;
+  align-items: center;
+}
+
+/* .fill-mode p {
+  margin-right: 10px;
+} */
+
+.fill-mode select {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  border-radius: 20px;
+  font-size: medium;
+}
+
+.range-slider-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.range-value {
+  color: #3b82f6;
+  font-weight: bold;
+}
+
+.range-slider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.range-input {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;  
+}
+/* keyframe-add */
+
+.partitions-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partition {
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid orange;
+  padding: 5px 6px;
+  position: relative;
+}
+
+.partition:last-child {
+  border-right: none;
+}
+
+
+.textarea-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.textarea {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.textarea-container label {
+  position: relative;
+}
+
+.textarea-container label {
+  position: absolute;
+  margin-top: -10px;
+  font-size: 20px;
+}
+
+.textarea-container .pi-times {
+  margin-top: -10px;
+  color: whitesmoke;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+}
+
+.app {
+  border-radius: 120px;
+}
+
+.elements {
+  padding: 1rem;
+}
+
+.params {
+  background-color: orange;
+  border: none;
+  outline: none;
+  padding: 8px;
+  margin: 0;
+  /* border-radius: 10px; */
+  color: white;
+  font-weight: bold;
+}
+
+.fbtn {
+  border-top-left-radius:20px;
+  border-bottom-left-radius:20px;
+}
+
+.sbtn{
+  border-top-right-radius:20px;
+  border-bottom-right-radius:20px; 
+}
+
+textarea {
+  border: none;
+  background-color: #545455;
+  color: whitesmoke;
+  font-weight: bold;
+  font-weight: 500;
+  padding: 5px;
+  font-size: 13px;
+  max-width: 400px;
+  margin-left: 20px;
+}
+
+textarea:focus {
+  outline: 1px solid orange;
+}
+
+/* add css button */
+.css-btn {
+  color: white;
+  border-radius: 5px;
+  font-family: "Space Grotesk", sans-serif;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  background-color:orange;
+}
+
+.input-container{
+  background-color: white;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 250px;
+}
+
+.menu-container{
+  margin-left: 10px;
+}
+.new-animation-input{
+  background-color: #545455;
+  width: 250px;
+  font-family: "Space Grotesk", sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: whitesmoke;
+}
+.new-animation-input:focus{
+  outline: 1px solid orange;
+}
