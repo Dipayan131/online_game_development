@@ -1,0 +1,49 @@
+{
+  "name": "host-react-module",
+  "version": "1.0.0",
+  "private": true,
+  "plugins": [
+    "react-hooks"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.10",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "18.2.0",
+    "dotenv": "^16.4.5",
+    "fork-ts-checker-webpack-plugin": "^4.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-react": "^7.24.1",
+    "@emotion/react": "^11.9.0",
+    "babel-loader": "^8.3.0",
+    "concurrently": "^8.2.2",
+    "css-loader": "^6.7.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "html-webpack-plugin": "^5.3.1",
+    "serve": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.5.1",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run start\" \"npm run serve\" \"npm run dev --prefix app0-r1\" \"npm run dev --prefix app2-r1\" \"npm run dev --prefix app1-r1\"",
+    "dev-host": "concurrently \"npm run start\" \"npm run serve\"",
+    "start": "webpack --watch",
+    "build": "webpack --mode production",
+    "serve": "webpack serve --config webpack.config.js",
+    "clean": "rm -rf dist"
+  }
+}

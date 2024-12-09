@@ -1,0 +1,18 @@
+.Host-Container {
+  border: solid 2px;
+  min-height: 100vh;
+  margin: 20px;
+  padding: 15px;
+}
+.Text {
+  font-size: 20px;
+  text-align: center;
+}
+.child {
+  margin-top: 20px;
+  border: solid 2px;
+  padding: 10px 0px;
+}
+.margin-bottom{
+  margin-bottom: 5px;
+}
